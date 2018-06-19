@@ -4,6 +4,7 @@
   "description": "Proxy for mock airbnb project",
   "main": "index.js",
   "scripts": {
+    "start-server": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,8 +17,11 @@
     "url": "https://github.com/the-big-mak/airfec-proxy-brian/issues"
   },
   "homepage": "https://github.com/the-big-mak/airfec-proxy-brian#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "http-proxy-middleware": "^0.18.0"
+  },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5"
   }
 }
