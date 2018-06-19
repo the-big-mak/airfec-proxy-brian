@@ -1,10 +1,18 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./stylsheet.css">
     <title>airFeC</title>
   </head>
   <body>
-    <script>
-    </script>
+    <div class="container"></div>
+    <div id="appPhotos"></div>
+    <div id="overview"></div>
+    <div id="appReservations"></div>
+    <div id="reviewIndex"></div>
+    <script src="http://localhost:3003/rooms/:id/bundlePhotos.js"></script>
+    <script src="http://http://airfec-env.tdt2hxkqtm.us-east-1.elasticbeanstalk.com/rooms/:id/dist/overview.js"></script>
+    <script src="http://ec2-18-208-163-155.compute-1.amazonaws.com/rooms/:id/bundleReservations.js"></script>
+    <script src="http://ec2-54-173-131-192.compute-1.amazonaws.com/rooms/:id/reviewBundle.js"></script>
   </body>
 </html>
